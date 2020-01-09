@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/login-semed.css">
+    <title>Login - Portal SEMED</title>
+</head><body>
+    <section class="material-half-bg">
+      <div class="cover"></div>
+    </section>
+    <section class="login-content">
+      <div class="logo">
+        <h1>Saber+</h1>
+        <h3>Portal SEMED</h3>
+      </div>
+      <div class="login-box">
+        <form class="login-form" action="index.html">
+          <h3 class="login-head">LOGIN</h3>
+          <div class="form-group">
+            <label class="control-label">CPF</label>
+            <input class="form-control" type="text" placeholder="O seu CPF" autofocus>
+          </div>
+          <div class="form-group">
+            <label class="control-label">SENHA</label>
+            <input class="form-control" type="password" placeholder="A sua senha">
+          </div>
+          <div class="form-group">
+            <div class="utility">
+              <p class="semibold-text mb-2"><a href="#" data-toggle="flip" style="text-decoration: none; color: #009688;">Esqueceu a senha?</a></p>
+            </div>
+          </div>
+          <div class="form-group btn-container">
+            <button class="btn btn-primary btn-block"><a href="#" style="text-decoration: none; color: #ffffff;">LOGIN</a></button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script type="text/javascript">
+        // Login Page Flipbox control
+        $('.login-content [data-toggle="flip"]').click(function() {
+            $('.login-box').toggleClass('flipped');
+            return false;
+        });
+      </script>
+    </body>
+  </html>
